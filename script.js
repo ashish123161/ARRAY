@@ -172,10 +172,26 @@
 
 
 
-let arr = [ 1, 2, 3, 4, 5, 6, ];
+let arr = [ 1, 2, 3, 4, 5, 6, 9 ];
 
-let evenarr = arr.filter((val) => {
-    return val % 2 ===0;
+// let evenarr = arr.filter((val) => {
+//     return val % 2 ===0;
+// });
+
+// console.log(evenarr);
+
+// const output = arr.reduce((res, curr) => {
+//     return res + curr;
+// });
+
+
+// console.log(output)
+
+
+
+const output = arr.reduce((res, curr) => {
+    return res > curr ? res : curr;
 });
 
-console.log(evenarr);
+
+console.log(output)
