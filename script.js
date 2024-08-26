@@ -172,7 +172,7 @@
 
 
 
-let arr = [ 1, 2, 3, 4, 5, 6, 9 ];
+// let arr = [ 1, 2, 3, 4, 5, 6, 9 ];
 
 // let evenarr = arr.filter((val) => {
 //     return val % 2 ===0;
@@ -189,9 +189,38 @@ let arr = [ 1, 2, 3, 4, 5, 6, 9 ];
 
 
 
-const output = arr.reduce((res, curr) => {
-    return res > curr ? res : curr;
+// const output = arr.reduce((res, curr) => {
+//     return res > curr ? res : curr;
+// });
+
+
+// console.log(output);
+
+// let marks = [97, 87, 76, 56, 78,99, 93];
+
+// let topper = marks.filter((val) => {
+//     return val >90;
+
+// });
+
+// console.log(topper);
+
+let n = prompt("enter a number : ");
+
+let arr = [];
+for (let i=1; i<=n; i++ ){
+    arr[i-1] = i;
+}
+
+console.log(arr);
+let sum = arr.reduce((res, curr) => {
+    return res + curr;
 });
 
+console.log("sum ",sum);
 
-console.log(output)
+let fact = arr.reduce((res, curr) => {
+    return res * curr;
+});
+
+console.log(fact);
